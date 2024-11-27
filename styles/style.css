@@ -1,0 +1,216 @@
+/* Общие стили */
+body {
+    font-family: 'Proxima Nova', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header img {
+    height: 40px;
+}
+
+.hide {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    margin-left: 8px;
+    position: relative;
+}
+
+.dropdown::after::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+header button:hover {
+    background-color: darkred;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 40px;
+    background-color: #f9f9f9;
+    margin-top: 80px; /* Высота header */
+}
+
+.section h1 {
+    font-size: 48px;
+    color: red;
+    max-width: 50%;
+}
+
+.section img {
+    max-width: 50%;
+    height: auto;
+}
+
+.about {
+    padding: 80px 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #666;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.stats div {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.stats h3 {
+    font-size: 36px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.stats p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hide {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section h1 {
+        margin-bottom: 20px;
+    }
+
+    .section img {
+        margin-top: 20px;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .stats div {
+        margin: 20px 0;
+    }
+}
