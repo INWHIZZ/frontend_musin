@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NIXXSOL</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -103,7 +104,7 @@
     <h2>Portfolio</h2>
     <p>Lorem ipsum dolor sit amet consectetur. Nunc viverra faucibus praesent elementum commodo.</p>
     <!-- Слайдер -->
-    <div class="slider">
+    <!-- <div class="slider">
         <img src="img/game-1.png" alt="Image">
         <img src="img/game-2.png" alt="Image2">
     </div>
@@ -111,7 +112,29 @@
     <div class="slider-controls">
         <button class="slider-prev">&lt;</button>
         <button class="slider-next">&gt;</button>
+    </div> -->
+
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
     </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
 </section>
 
 <section class="banner">
@@ -220,6 +243,6 @@
     </div>
 </footer>
 
-
+<script src="scripts/script.js"></script>
 </body>
 </html>
