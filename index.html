@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NIXXSOL</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+
 </head>
 
 <body>
@@ -114,25 +116,18 @@
         <button class="slider-next">&gt;</button>
     </div> -->
 
-    <!-- Slider main container -->
+    <!-- Слайдер -->
 <div class="swiper">
-    <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      ...
+      <div class="swiper-slide"><img src="img/game-1.png" alt="Game 1"></div>
+      <div class="swiper-slide"><img src="img/game-2.png" alt="Game 2"></div>
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+  </div>
   
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
+  <button class="games-btn">See All Games</button>
+  <div class="slider-controls">
+    <button class="slider-prev">&lt;</button>
+    <button class="slider-next">&gt;</button>
   </div>
 
 </section>
@@ -244,5 +239,6 @@
 </footer>
 
 <script src="scripts/script.js"></script>
+<script src="swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
